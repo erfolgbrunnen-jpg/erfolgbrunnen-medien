@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Instagram verbinden</title>
+<style>body{font-family:system-ui,sans-serif;background:#000;color:#c69e4f;max-width:640px;margin:40px auto;padding:0 16px}
+code{display:block;word-break:break-all;background:#1a1a1a;color:#fff;padding:12px;border-radius:6px}</style></head>
+<body><h1>Instagram verbinden</h1><p id="t">Kopiere diesen Code und füge ihn im Terminal ein:</p><code id="c"></code>
+<script>const p=new URLSearchParams(location.search);const c=(p.get("code")||"").replace(/#_?$/,"");
+if(c){document.getElementById("c").textContent=c}else{document.getElementById("t").textContent="Kein Code erhalten: "+(p.get("error_description")||p.get("error_reason")||p.get("error")||"unbekannt")}</script>
+</body></html>
